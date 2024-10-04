@@ -1,58 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trilha de CSS - DIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="banner">
-    <div class="banner-content">
-      <div class="logo">
-        <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
-      </div>
-      <h1>Trilha de CSS da DIO</h1>
-      <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
-      <button>Quero me inscrever</button>
-    </div>
-  </header>
-  <main>
-    <section id="course-content">
-      <h2>O que vou aprender?</h2>
-      <p>
-        Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
-        desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
-      </p>
-      <div class="modules-list">
-        <div class="module">
-          <span>Módulo 01:</span> primeiros passos com CSS
-        </div>
-        <div class="module">
-          <span>Módulo 02:</span> trabalhando com layouts no CSS
-        </div>
-        <div class="module">
-          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
-        </div>
-      </div>
+    <header>
+        <nav>
+            <a href="#" class="logo">Minha Empresa</a>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Bem-vindo(a) à Nossa Landing Page</h1>
+        <p>Aqui você encontra os melhores serviços para seu negócio!</p>
+        <a href="#servicos" class="cta-button">Saiba Mais</a>
     </section>
-    <section id="transform-world">
-      <p>TRANSFORME O MUNDO COM A GENTE</p>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma empresa inovadora...</p>
     </section>
-    <section id="professional-challenges">
-      <h2>Evolua e encare novos desafios profissionais</h2>
-      <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
-      <p>
-        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
-        acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
-        além do conhecimento técnico. 
-        A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
-      </p>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="card">
+            <h3>Serviço 1</h3>
+            <p>Descrição do serviço 1.</p>
+        </div>
+        <div class="card">
+            <h3>Serviço 2</h3>
+            <p>Descrição do serviço 2.</p>
+        </div>
     </section>
-  </main>
-  <footer>
-    <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
-    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
-  </footer>
+
+    <footer id="contato">
+        <h2>Contato</h2>
+        <p>Email: contato@empresa.com</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
